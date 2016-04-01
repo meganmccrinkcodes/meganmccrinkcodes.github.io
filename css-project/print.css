@@ -1,0 +1,80 @@
+* {
+background:transparent; !important
+color:black;
+font-size:10pt;
+font-family:serif;
+}
+
+@page {
+margin: 0.75in;
+}
+
+h1 {
+  font-size:30pt:
+  margin:0in;
+  text-align:center;
+  }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing:0.01in;
+  font-size: 15pt;
+  margin-bottom:0.2in;
+  border-bottom: 0.5pt solid black;
+  text-align:center;
+  }
+
+h3 {
+  letter-spacing:0.01in;
+  font-size:12pt;
+  margin-bottom:0in;
+  }
+
+.education h3 {
+  letter-spacing:0.01in;
+  font-size:10pt;
+  margin-bottom:0in;
+  }
+
+p, ul, li {
+  text-transform:inherit;
+  letter-spacing:0.01in;
+  font-size:10pt;
+  margin-botom:0.2in;
+  letter-spacing:0.01in;
+  }
+
+img {
+  display:none;
+  }
+
+a {
+  text-decoration:none;
+  color:black;
+  }
+
+.nav, footer {
+  display:none;
+  }
+
+#awards, #work-samples, #things-i-like {
+  display:none;
+  }
+
+.name-megan h1 {
+  font-size:35pt;
+  text-transform:uppercase;
+  letter-spacing:0.05in;
+  margin-bottom:0.01in;
+  text-align:center;
+  }
+
+address ul li{
+  text-align:center;
+  list-style:none;
+  margin:.02in;
+  }
+
+address {
+  margin-bottom:.2in;
+  }
