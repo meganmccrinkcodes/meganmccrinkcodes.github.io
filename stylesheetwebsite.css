@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,900,900italic);
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+}
+
+header {
+  float:left;
+  position:fixed;
+}
+
+header h1 {
+  display:none;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  width:100px;
+  text-align: right;
+  float:right;
+}
+
+#portfolio div section{
+  float:right;
+  margin: 30px auto;
+  margin-left:0px auto;
+  margin-right:0px auto;
+  padding: 0px;
+  vertical-align:text-bottom;
+}
+
+
+header,
+nav ul,
+main {
+  margin: 0 auto;
+  width: 960px;
+  }
+
+  h1 {
+    color: rgb(234,57,98); /*pink*/
+  }
+
+  h2 {
+    color: rgb(234,57,98);/*pink*/
+  }
+
+  h3 {
+    color: rgb(234,57,98);/*pink*/
+  }
+
+  a:hover,
+  a:focus {
+    color: rgb(234,57,98);/*pink*/
+  }
+
+  a,
+  a:active {
+  color: rgb(100,100,100); /* gray */
+  }
+
+  a,
+  a:active {
+    color: rgb(135,135,139);
+  }
+
+  section ul li {
+    list-style:none;
+  }
+
+  div section {
+    margin: 30px auto;
+    margin-left:0px auto;
+    margin-right:0px auto;
+    padding: 0px;
+    vertical-align:text-top;
+  }
+
+
+  main {
+    overflow:auto;
+    }
+
+  #col-one {
+      float:left;
+      width:445px;
+      margin-right:70px;
+    }
+
+  #col-two {
+      float:left;
+      width:445px;
+    }
+
+  .image {
+    float:left;
+  }
+
+  #col-three {
+      float:left;
+      width:445px;
+      margin-right:20px;
+    }
