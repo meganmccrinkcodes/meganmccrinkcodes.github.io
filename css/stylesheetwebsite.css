@@ -44,7 +44,7 @@ nav ul li {
 
 nav, main {
   margin-left: 150px;
-  max-width:960px;
+  width:960px;
   }
 
   .navindex ul {
