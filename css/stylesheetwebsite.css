@@ -132,32 +132,32 @@ main {
 
   #col-one {
       float:left;
-      max-width:445px;
+      width:445px;
       margin-right:70px;
       margin-top:15px;
     }
 
   #col-two {
       float:left;
-      max-width:445px;
+      width:445px;
       margin-top:1px;
     }
 
 
   #col-three {
       float:left;
-      max-width:445px;
+      width:445px;
       margin-right:20px;
     }
 
   #col-five {
         float:left;
-        max-width:445px;
+        width:445px;
       }
 
   #col-four {
           float:left;
-          max-width:445px;
+          width:445px;
           margin-right:20px;
         }
 
