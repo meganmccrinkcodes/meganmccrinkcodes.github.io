@@ -6,7 +6,6 @@ body {
   color: rgb(100, 100, 100);
 }
 
-
 header {
   position:fixed;
   top:20px;
@@ -15,19 +14,20 @@ header {
   height:100%;
 }
 
+
 header h1 {
   display:none;
 }
 
+
 .logoindex {
-  width:500px;
+  max-width:500px;
   margin:0px auto;
   margin-left: 300px;
   margin-right: 300px ;
   padding:20px;
   float:right:
 }
-
 
 nav ul {
   float:right;
@@ -41,11 +41,11 @@ nav ul li {
   margin-left:15px;
 }
 
-
 nav, main {
   margin-left: 150px;
   width:960px;
   }
+
 
   .navindex ul {
     float:none;
@@ -64,7 +64,6 @@ nav, main {
     font-size:18px;
     margin-left: 200px;
     margin-right:200px;
-    width: 960px;
   }
 
   h1 {
