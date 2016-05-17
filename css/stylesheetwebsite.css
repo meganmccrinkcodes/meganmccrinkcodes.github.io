@@ -14,20 +14,10 @@ header {
   height:100%;
 }
 
-
 header h1 {
   display:none;
 }
 
-
-.logoindex {
-  max-width:500px;
-  margin:0px auto;
-  margin-left: 300px;
-  margin-right: 300px ;
-  padding:20px;
-  float:right:
-}
 
 nav ul {
   float:right;
@@ -46,25 +36,6 @@ nav, main {
   width:960px;
   }
 
-
-  .navindex ul {
-    float:none;
-    margin-bottom:60px;
-  }
-
-  .navindex ul li {
-    list-style: none;
-    display: inline-block;
-    text-align: right;
-    margin-left:15px;
-    margin-right:70px;
-  }
-
-  .navindex {
-    font-size:18px;
-    margin-left: 200px;
-    margin-right:200px;
-  }
 
   h1 {
     color: rgb(234,57,98); /*pink*/
@@ -185,4 +156,19 @@ main {
   .jeopardy {
     max-width:500px;
     width:100%;
+  }
+
+  .social img {
+    width:23px;
+    height:auto;
+  }
+
+  .social li {
+  display:inline-block;
+  list-style:none;
+  margin:2.8px;
+  }
+
+  .social ul {
+  padding-left:0px;
   }
