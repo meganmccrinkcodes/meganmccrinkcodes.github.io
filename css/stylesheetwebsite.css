@@ -143,7 +143,7 @@ main {
     margin-right:160px;
   }
 
-  .magazine > img {
+  .magazine img {
     -webkit-box-shadow: 4px 5px 50px -2px rgba(100,100,100,0.32);
     -moz-box-shadow: 4px 5px 50px -2px rgba(100,100,100,0.32);
     box-shadow: 4px 5px 50px -2px rgba(100,100,100,0.32);
