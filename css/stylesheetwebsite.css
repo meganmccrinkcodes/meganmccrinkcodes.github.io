@@ -144,9 +144,9 @@ main {
   }
 
   .magazine > img {
-    -webkit-box-shadow: 15px 15px 17px -2px rgba(100,100,100,0.32);
-    -moz-box-shadow: 15px 15px 17px -2px rgba(100,100,100,0.32);
-    box-shadow: 15px 15px 17px -2px rgba(100,100,100,0.32);
+    -webkit-box-shadow: 15px 15px 50px -2px rgba(100,100,100,0.32);
+    -moz-box-shadow: 15px 15px 50px -2px rgba(100,100,100,0.32);
+    box-shadow: 15px 15px 50px -2px rgba(100,100,100,0.32);
     }
 
 
