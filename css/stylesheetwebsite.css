@@ -179,3 +179,24 @@ main {
     display: block;
     max-width: 200px;
   }
+
+  .colorize {
+    animation: colorize 3s infinite;
+  }
+
+  @keyframes colorize {
+    0% {
+      fill: rgb(167,169,122); /* gray */
+    }
+    25% {
+      fill: rgb(0,202,232); /* blue */
+    }
+    50% {
+      fill: rgb(234,57,98); /* pink */
+    }
+    75% {
+      fill: rgb(201,227,28); /* yellow */
+    }
+    80% {
+      fill: rgb(167,169,122); /* gray */
+    }
