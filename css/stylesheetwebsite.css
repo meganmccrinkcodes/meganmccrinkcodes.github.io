@@ -190,6 +190,10 @@ main {
     animation: colorize 3s infinite;
   }
 
+  .main-header {
+    font-size: 30px;
+  }
+
   @keyframes colorize {
     0% {
       fill: rgb(167,169,122); /* gray */
