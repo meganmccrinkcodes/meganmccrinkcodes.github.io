@@ -27,6 +27,7 @@ header h1 {
   .landingpagep {
     text-align:right;
     font-size:10px;
+    max-width:750px;
   }
 
 
