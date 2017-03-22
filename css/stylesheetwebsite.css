@@ -18,6 +18,10 @@ header h1 {
   display:none;
 }
 
+.landingpagehed {
+  text-align:center;
+}
+
 
 nav ul {
   float:right;
@@ -188,10 +192,6 @@ main {
 
   .colorize {
     animation: colorize 3s infinite;
-  }
-
-  .main-header {
-    font-size: 30px;
   }
 
   @keyframes colorize {
