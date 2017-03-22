@@ -22,14 +22,16 @@ header h1 {
   text-align:center;
   font-size:40px;
   max-width:750px;
-  max-height: 300px;
   margin-left:50px;}
+
+  /*this is still a work in progress
 
   .landingpagep {
     text-align:right;
     font-size:10px;
     max-width:750px;
   }
+  */
 
 
 nav ul {
