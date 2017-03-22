@@ -20,8 +20,9 @@ header h1 {
 
 .landingpagehed {
   text-align:center;
-  font-size:4px;
-  max-width:300px;}
+  font-size:40px;
+  max-width:750px;
+  margin-left:50px;}
 
 
 nav ul {
