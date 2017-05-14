@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Site Organization</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Site Organization</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Information Architecture</h2>
+
+        <ul>
+          <li>structural design of shared information environments</li>
+          <li>combination of organizing, labeling, search and navigation within web sites</li>
+          <li>the art and science of shaping information products, experiences to support <em>usability</em> and <em>findability</em></li>
+        </ul>
+
+        <p><small><strong>Source:</strong> Rosenfeld, L., Morville, P. (2006). "<em>Information Architecture for the World Wide Web</em>". Sebastopol, CA: O'Reilly.</small></p>
+      </section>
+
+
+      <section>
+        <h2>Organization Schemes</h2>
+
+        <ul>
+          <li>alphabetical</li>
+          <li>chronological</li>
+          <li>geographical</li>
+          <li>ambiguous
+            <ul>
+              <li>topical</li>
+              <li>functional (by task)</li>
+              <li>audience driven</li>
+              <li>metaphor</li>
+              <li>hybrid</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Site Organization</h2>
+
+        <p>The number of files a web site uses can grow quickly. Information architecture helps us keep assets organized.</p>
+
+        <p>Most sites employ a hybrid architecture:</p>
+
+        <ul>
+          <li>functional (for asset organization)</li>
+          <li>another scheme (which depends on the site's purpose)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Functional Architecture</h2>
+
+        <p>To keep suppementary components of a site &mdash; images, style sheets and scripts &mdash; organized, we use the following convention:</p>
+
+        <ul>
+          <li><strong>images</strong> belong in an <code>images</code> or <code>img</code> directory</li>
+          <li><strong>style sheets</strong> belong in a <code>css</code> or <code>styles</code> directory</li>
+          <li><strong>scripts</strong> belong in a <code>js</code> or <code>scripts</code> directory</li>
+        </ul>
+
+        <p>Depending on the amount of content, these sections may be further organized with another scheme.</p>
+      </section>
+
+
+      <section>
+        <h2>A Build-Up of Content</h2>
+
+        <p>If we built a site with many pages, we will not use individual <code>.html</code> files in our root directory for long.</p>
+
+        <ul>
+          <li><code>baseball.html</code></li>
+          <li><code>baseball-players.html</code></li>
+          <li><code>baseball-schedule.html</code></li>
+          <li><code>baseball-standings.html</code></li>
+          <li><code>baseball-teams.html</code></li>
+        </ul>
+
+        <p>What if required files for all sports (basketball, football, hockey, soccer)?</p>
+
+        <p>Different leagues?</p>
+
+        <p>Each team?</p>
+
+        <p>Each player?</p>
+
+        <p class="emoji">&#128563;</p>
+      </section>
+
+
+      <section>
+        <h2>Organizing Content</h2>
+
+        <p>Instead of keeping each file in the same directory, we can use a topical scheme and directories to organize the content.</p>
+
+        <ul>
+          <li><code>baseball/</code>
+            <ul>
+              <li><code>players/</code>
+                <ul>
+                  <li>(one page for each player)</li>
+                </ul>
+              </li>
+              <li><code>schedule.html</code></li>
+              <li><code>standings.html</code></li>
+              <li><code>teams/</code>
+                <ul>
+                  <li>(one page for each team)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Organization is Multipurpose</h2>
+
+        <p>Keeping a site organzied using directories not only aids a web developer.</p>
+
+        <p>By organizing files in directories, we create paths.</p>
+
+        <ul>
+          <li><code>pages/</code>
+            <ul>
+              <li><code>sports/</code>
+                <ul>
+                  <li><code>baseball/</code>
+                    <ul>
+                      <li><code>index.html</code></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>Paths ultimately build the URL of a file on the web!</p>
+
+        <img src="images/11-url-bar.png" alt="A URL bar" class="resized" />
+
+
+
+      </section>
+
+
+      <section>
+        <h2>Paths as URLs</h2>
+
+        <p>Revisiting our own baseball example:</p>
+
+        <ul>
+          <li><code>baseball/</code>
+            <ul>
+              <li><code>players/</code>
+                <ul>
+                  <li><code>jose-fernandez.html</code></li>
+                </ul>
+              </li>
+              <li><code>schedule.html</code></li>
+              <li><code>standings.html</code></li>
+              <li><code>teams/</code>
+                <ul>
+                  <li><code>miami-marlins.html</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <p><code>http://domain.com/baseball/players/jose-fernandez.html</code></p>
+
+        <p><code>http://domain.com/baseball/schedule.html</code></p>
+
+        <p><code>http://domain.com/baseball/standings.html</code></p>
+
+        <p><code>http://domain.com/baseball/teams/miami-marlins.html</code></p>
+      </section>
+
+
+      <section>
+        <h2>Paths in HTML</h2>
+
+        <p>Within HTML, the <code>href</code> and <code>src</code> attributes rely on paths to locate content.</p>
+      </section>
+
+
+      <section>
+        <h2>Files in the Same Directory</h2>
+
+        <p>When a file being requested is in the same directory as the file requesting it, we only need to specify the file name.</p>
+
+        <ul>
+          <li><code>index.html</code></li>
+          <li><code>site-map.html</code></li>
+        </ul>
+
+        <p>To link to <code>site-map.html</code> in <code>index.html</code>:</p>
+
+        <p><code>&lt;a href="site-map.html"&gt;Site Map&lt;/a&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Files in a Subdirectory</h2>
+
+        <p>When a file being requested is in a subdirectory in relation to the file requesting it, we specify the forward directory path and the file name.</p>
+
+        <ul>
+          <li><code>index.html</code></li>
+          <li><code>photos/</code>
+            <ul>
+              <li><code>flynn.jpg</code></li>
+              <li><code>quorra.jpg</code></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>To embed <code>quorra.jpg</code> in <code>index.html</code>:</p>
+
+        <p><code>&lt;img src="photos/quorra.jpg" alt="Quorra the cat" /&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Files in a Previous Directory</h2>
+
+        <p>When the file being requested is in a directory higher in the file tree than the one requesting it, we must use previous directory shorthand (two dots <code>..</code>), then specify the forward directory path and file name.</p>
+
+        <ul>
+          <li><code>index.html</code></li>
+          <li><code>photos/</code>
+            <ul>
+              <li><code>flynn.jpg</code></li>
+              <li><code>quorra.jpg</code></li>
+            </ul>
+          </li>
+          <li><code>cats/</code>
+            <ul>
+              <li><code>tabby.html</code></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>To embed <code>flynn.jpg</code> in <code>tabby.html</code>:</p>
+
+        <p><code>&lt;img src="../photos/flynn.jpg" alt="Flynn the cat" /&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Absolute or Relative?</h2>
+
+        <p>Is best to use relative paths for internal files.</p>
+
+        <p>Paths on a user's computer are hardly ever identical to the ones on a server. Absolute paths are too specific and hinder <em>portability</em>.</p>
+
+        <p>For instance:</p>
+
+        <ul>
+          <li><strong>user:</strong> <code>/Users/exb192/Sites/my-web-site/cats/index.html</code></li>
+          <li><strong>server:</strong> <code>/html/cats/index.html</code></li>
+        </ul>
+
+        <p>Web servers are set up in a way where one directory <em>acts</em> as a root directory.</p>
+
+        <p>An example of a portable path (if <code>html</code> is acting as our root directory):</p>
+
+        <ul>
+          <li><strong>user:</strong> <code>cats/index.html</code></li>
+          <li><strong>server:</strong> <code>cats/index.html</code></li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Paths in Use</h2>
+
+        <p>Assuming all directories and files are uploaded properly, these examples would work on both a user's computer and a server.</p>
+
+        <p><code>&lt;link href="../css/style.css" rel="stylesheet" /&gt;</code></p>
+
+        <p><code>&lt;img src="images/birds/tiki.jpg" alt="Tiki Birdy" /></code></p>
+
+        <p><code>&lt;a href="about/site-map.html"&gt;Site Map&lt;/a&gt;</code></p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+      <p><a href="12-document-object-model.html"></a></p>
+    </footer>
+  </body>
+</html>
+Status API Training Shop Blog About
