@@ -227,3 +227,7 @@ main {
     80% {
       fill: rgb(167,169,122); /* gray */
     }
+
+    body {
+      margin: 0 auto;
+    }
