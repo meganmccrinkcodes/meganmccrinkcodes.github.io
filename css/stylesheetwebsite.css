@@ -264,12 +264,14 @@ main {
   } */
 
   .social li {
+    display:none;
   display:inline-block;
   list-style:none;
   margin:3px;
   }
 
   .social ul {
+    display:none;
   padding-left:0px;
   }
 
