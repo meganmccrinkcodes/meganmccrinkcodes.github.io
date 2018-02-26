@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
   body {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -68,27 +68,27 @@
 
     h1 {
       color: rgb(234,57,98); /*pink*/
-    }
+    /*}*/
 
-    h2 {
-      color: rgb(234,57,98);/*pink*/
-    }
+    /*h2 {*/
+      /*color: rgb(234,57,98);/*pink*/
+    /*}*/
 
-    h3 {
-      color: rgb(234,57,98);/*pink*/
-    }
+    /*h3 {*/
+      /*color: rgb(234,57,98);/*pink*/
+    /*}*/
 
-    a:hover,
+    /*a:hover,
     a:focus {
-      color: rgb(234,57,98);/*pink*/
+      color: rgb(234,57,98);
     }
 
     a,
     a:active {
-    color: rgb(100,100,100); /* gray */
-    }
+    color: rgb(100,100,100);
+    }*/
 
-    a,
+    /*a,
     a:active {
       color: rgb(135,135,139);
     }
@@ -186,4 +186,29 @@
       max-width:500px;
     }
 
-}
+}*/
+
+@media only screen and (max-width: 750px) {
+
+  #aboutme div.me-photo, div.me-text {
+    display: block;
+  }
+
+  #aboutme .me-photo {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #aboutme .me-text {
+    width: 100%;
+  }
+
+  #col-one, #col-two {
+    display: block;
+    width: 100%;
+    margin-top: 15px
+  }
+
+  #col-one {
+      margin-right: 0%;
+    }

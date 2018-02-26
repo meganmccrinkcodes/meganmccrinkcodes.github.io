@@ -1,29 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,900,900italic);
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i');
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
+  background-color: #F5F5F5;
+  margin:0;
+  margin-top:100px;
   color: rgb(100, 100, 100);
 }
 
 header {
+  font-family: 'Playfair Display', serif;
   position:fixed;
-  top:20px;
-  left:10px;
-  max-width:125px;
-  height:100%;
-}
+  top: 0;
+  /*top:20px;
+  left:10px;*/
+  width:100%;
+  background-color:#F5F5F5;
+  margin-left:20px;}
 
 header h1 {
-  display:none;
+  display:block;
 }
 
 .landingpagehed {
   text-align:center;
   font-size:35px;
-  max-width:750px;
-  margin-left:50px;
-  margin-top: 120px;}
+  margin-top: 120px;
+  width:80%;
+  margin:0 auto;}
 
   /*this is still a work in progress
 
@@ -37,7 +43,10 @@ header h1 {
 
 nav ul {
   float:right;
-  margin-bottom:60px;
+  position:absolute;
+  right:5%;
+  top:10%;
+  font-family: 'Lato', sans-serif;
 }
 
 nav ul li {
@@ -48,26 +57,26 @@ nav ul li {
 }
 
 nav, main {
-  margin-left: 150px;
-  width:960px;
+  margin-left: 0 auto;
+  width:100%;
   }
 
 
   h1 {
-    color: rgb(234,57,98); /*pink*/
+    color: #DB7093; /*rose*/
   }
 
   h2 {
-    color: rgb(234,57,98);/*pink*/
+    color: #DB7093; /*rose*/
   }
 
   h3 {
-    color: rgb(234,57,98);/*pink*/
+    color: #DB7093; /*rose*/
   }
 
   a:hover,
   a:focus {
-    color: rgb(234,57,98);/*pink*/
+    color: #DB7093; /*rose*/
   }
 
   a,
@@ -80,31 +89,89 @@ nav, main {
     color: rgb(135,135,139);
   }
 
+  header a.logo {
+    text-decoration: none;
+    color: inherit;
+  }
+  header a.logo:hover {
+    animation: colorize 3s infinite;
+  }
+
   section ul li {
     list-style:none;
   }
 
-  #aboutme div:first-child {
+  /*#aboutme div:first-child {
     border-bottom:1px solid black;
     overflow:auto;
+  }*/
+
+  #aboutme {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 80%;
   }
 
-  #aboutme img {
-    float:left;
+  #aboutme section.about {
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
+
+  #aboutme div.me-photo, div.me-text {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #aboutme .me-photo {
+    width: 50%;
+    margin-right: 5%;
+  }
+
+  #aboutme .me-photo img {
+    width: 100%;
+  }
+
+   #aboutme .me-text {
+    width: 44%;
+  }
+
 
   #portfolio > div {
     overflow:auto;
     margin-bottom:50px;
+    margin-right:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
   }
 
-  #portfolio > div section:first-child {
+  #portfolio > div.row > section > img {
+    margin-right:50px;
+    width:auto;
+  }
+
+  #portfolio > div.description > p {
+    text-align:left;
+    margin-bottom:3px;
+    width:70%;
+    word-wrap:normal;
+  }
+
+  #portfolio > div.description > h2 {
+    text-align:left;
+    margin-bottom:3px;
+    width:70%;
+  }
+
+
+/*  #portfolio > div section:first-child {
     float:left;
   }
 
   #portfolio > div section:last-child {
     float:right;
-  }
+  } */
 
   /* #portfolio > div section:nth-last-child(2){
     float:right;
@@ -121,21 +188,19 @@ main {
     overflow:auto;
     }
 
+  #col-one, #col-two {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-top: 15px;
+  }
+
   #col-one {
-      float:left;
-      width:445px;
-      margin-right:70px;
-      margin-top:15px;
-    }
-
-  #col-two {
-      float:left;
-      width:445px;
-      margin-top:15px;
+      margin-right: 8%;
     }
 
 
-  #col-three {
+  /*#col-three {
       float:left;
       width:445px;
       margin-right:20px;
@@ -150,17 +215,20 @@ main {
           float:left;
           width:445px;
           margin-right:20px;
-        }
+        }*/
 
-  .single {
-    margin:10px auto;
-    margin-left:100px;
+  /*.single {
+    margin:0 auto;
+    width:100%;
+    float:center;
+    /*margin-left:100px;
     margin-right:160px;
   }
 
   .single-christmas {
+    align:center;
     margin:10px auto;
-    margin-left:50px;
+    /*margin-left:50px;
     margin-right:45px;
   }
 
@@ -184,6 +252,10 @@ main {
   .jeopardy {
     max-width:500px;
     width:100%;
+  } */
+
+  .social {
+    display:none;
   }
 
 /*  .social img {
@@ -201,33 +273,25 @@ main {
   padding-left:0px;
   }
 
-  svg {
+  /*svg {
     margin: 0 auto;
     display: block;
     max-width: 200px;
-  }
-
-  .colorize {
-    animation: colorize 3s infinite;
-  }
+  }*/
 
   @keyframes colorize {
     0% {
-      fill: rgb(167,169,122); /* gray */
+      color: rgb(167,169,122); /* gray */
     }
     25% {
-      fill: rgb(0,202,232); /* blue */
+      color: rgb(0,202,232); /* blue */
     }
     50% {
-      fill: rgb(234,57,98); /* pink */
+      color: rgb(234,57,98); /* pink */
     }
     75% {
-      fill: rgb(201,227,28); /* yellow */
+      color: rgb(201,227,28); /* yellow */
     }
     80% {
-      fill: rgb(167,169,122); /* gray */
-    }
-
-    body {
-      margin: 0 auto;
+      color: rgb(167,169,122); /* gray */
     }
