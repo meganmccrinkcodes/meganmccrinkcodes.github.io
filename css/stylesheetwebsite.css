@@ -77,9 +77,7 @@ nav, main {
   width:100%;
   }
 
-.newsprintnav > h1 {
-  color:#FFFFFF;
-}
+
 
 
   h1 {
@@ -96,18 +94,18 @@ nav, main {
 
   a:hover,
   a:focus {
-    color: #C71585; /*rose*/
+    color: #D8BFD8; /*rose*/
   }
 
 
   a,
   a:active {
-  color: #C71585; /* gray */
+  color: rgb(100,100,100); /* gray */
   }
 
   a,
   a:active {
-    color: #C71585;
+    color: rgb(135,135,139);
   }
 
   header a.logo {
