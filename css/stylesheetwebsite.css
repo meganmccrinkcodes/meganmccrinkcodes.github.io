@@ -1,27 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i');
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   margin:0;
-  margin-top:100px;
   color: rgb(100, 100, 100);
 }
 
-header {
-  font-family: 'Playfair Display', serif;
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  font-family: 'Lato', sans-serif;
   position:fixed;
   top: 0;
+  bottom:3;
   /*top:20px;
   left:10px;*/
   width:100%;
-  background-color:#F5F5F5;
-  margin-left:20px;}
+  background-color: #FF69B4;
+  margin-left:20px;
+  height: 40px;
+}
 
-header h1 {
+h1 {
   display:block;
+  height: 55px;
+  font-family:'Lato', sans-serif;
 }
 
 .landingpagehed {
@@ -44,9 +52,11 @@ header h1 {
 nav ul {
   float:right;
   position:absolute;
-  right:5%;
-  top:10%;
+  right:2.5%;
+  top:30%;
+  margin: 0;
   font-family: 'Lato', sans-serif;
+
 }
 
 nav ul li {
@@ -56,28 +66,39 @@ nav ul li {
   margin-left:15px;
 }
 
+nav ul li a {
+  text-decoration:none;
+  color:#FFFFFF;
+  font-size:15px;
+}
+
 nav, main {
-  margin-left: 0 auto;
+  margin: 0 auto;
   width:100%;
   }
 
+.newsprintnav > h1 {
+  color:#FFFFFF;
+}
+
 
   h1 {
-    color: #DB7093; /*rose*/
+    color: #FF69B4;; /*rose*/
   }
 
   h2 {
-    color: #DB7093; /*rose*/
+    color: #FF69B4;; /*rose*/
   }
 
   h3 {
-    color: #DB7093; /*rose*/
+    color: #FF69B4;; /*rose*/
   }
 
   a:hover,
   a:focus {
-    color: #DB7093; /*rose*/
+    color: #D8BFD8; /*rose*/
   }
+
 
   a,
   a:active {
@@ -136,6 +157,40 @@ nav, main {
     width: 44%;
   }
 
+   div.info {
+    width:100%;
+    padding-top: 30vh;
+    display:block;
+    text-align:center;
+    background-color:#FF69B4;
+    margin-bottom: 90px;
+    height:70vh;
+  }
+
+  div.info p {
+    color:#FFFFF0;
+    line-height:40%;
+    font-size:135%;
+  }
+
+   div.info > h1 {
+    color:#FFFFF0;
+    display:block;
+    height:20px;
+    font-family:'Lato'sans-serif;
+    font-size:515%;
+    line-height:15%;
+  }
+
+  div.info > img {
+    margin-bottom:8px;
+    height:50px;
+  }
+
+  span > img {
+    height:40px;
+    margin-top:100px;
+  }
 
   #portfolio > div {
     overflow:auto;
@@ -149,6 +204,11 @@ nav, main {
   #portfolio > div.row > section > img {
     margin-right:50px;
     width:auto;
+  }
+
+  #portfolio > div.description {
+    margin-left:30px;
+    margin-right:80px;
   }
 
   #portfolio > div.description > p {
@@ -273,6 +333,10 @@ main {
   .social ul {
     display:none;
   padding-left:0px;
+  }
+
+  .newsprintnav {
+    margin-bottom:100px;
   }
 
   /*svg {
