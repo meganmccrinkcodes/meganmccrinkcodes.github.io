@@ -96,18 +96,18 @@ nav, main {
 
   a:hover,
   a:focus {
-    color: #D8BFD8; /*rose*/
+    color: #C71585; /*rose*/
   }
 
 
   a,
   a:active {
-  color: rgb(100,100,100); /* gray */
+  color: #C71585; /* gray */
   }
 
   a,
   a:active {
-    color: rgb(135,135,139);
+    color: #C71585;
   }
 
   header a.logo {
